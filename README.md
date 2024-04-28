@@ -14,7 +14,7 @@ Primero, clona el repositorio utilizando el siguiente comando:
 git clone https://github.com/xapolin1979/star_wars.git
 
 
-### 2. Instalar Dependencias
+2. Instalar Dependencias
 
 Accede al directorio del proyecto y ejecuta el siguiente comando para instalar todas las dependencias necesarias:
 
@@ -22,17 +22,21 @@ Accede al directorio del proyecto y ejecuta el siguiente comando para instalar t
 cd star_wars
 npm install
 
-###3. Activar Servidor Falso JSON-Server-Auth
+3. Activar Servidor Falso JSON-Server-Auth
 Para simular una base de datos falsa, necesitamos activar el servidor falso utilizando json-server-auth.
+
 Ejecuta el siguiente comando: 
+
 ```bash
    npx json-server-auth db.json  
 
 Esto iniciará el servidor falso y podrás acceder a la base de datos simulada.
 
-###4. Iniciar la Aplicación
+4. Iniciar la Aplicación
+
 Una vez que el servidor esté activo, puedes iniciar la aplicación Angular,
 ejecutando el siguiente comando:
+
 ```bash
 ng serve
 
