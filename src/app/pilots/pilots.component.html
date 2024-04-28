@@ -1,0 +1,22 @@
+<div class="container-fluid">
+
+<div class="pilotos">
+
+    <h5>Pilotos </h5>
+</div>
+
+<div class="container_targetPilots" *ngIf="listaPilotos">
+  <div class="targetPilot"*ngFor="let pilot of urlPilots;index as i">
+    <div class="imagen">
+      <img  src="https://starwars-visualguide.com/assets/img/characters/{{numeroImg[i]}}.jpg" alt="">
+    
+    </div>
+    <div class="nombre">
+        <p>{{namePilot[i]}}</p>
+    </div>
+  </div>
+
+</div>
+<h2 *ngIf="!listaPilotos">No existe información </h2>
+
+</div>

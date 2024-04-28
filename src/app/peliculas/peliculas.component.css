@@ -1,0 +1,75 @@
+.container-fluid{
+    position: relative;
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+ 
+
+}
+
+.peliculas{
+    width: 95%;
+    height: 80px;
+    border-top: 1px solid rgb(255, 255, 255);
+   border-bottom: 1px solid rgb(255, 255, 255);
+   margin-bottom: 30px;
+   display: flex;
+   align-items: center;
+}
+.peliculas h5{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 7px;
+}
+
+.container_targetPeliculas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.targetPelicula{
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    background-color: #2b2828;
+}
+.imagen{
+   width: 100%;
+   border-radius: 10px 10px 0px 0px;
+}
+.imagen img{
+    max-width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.nombre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #2b2828;
+    color:white;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+    border-top: 1px solid red;
+}
+
+h2{
+    color:white;
+}
+
+

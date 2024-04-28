@@ -1,27 +1,41 @@
-# Starwars
+# Star Wars App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+Este proyecto es una aplicación web desarrollada con Angular 17 que proporciona información sobre las naves del universo de Star Wars.
 
-## Development server
+## Instrucciones de Uso
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Sigue estos pasos para ejecutar la aplicación en tu entorno local:
 
-## Code scaffolding
+### 1. Clonar el Repositorio
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Primero, clona el repositorio utilizando el siguiente comando:
 
-## Build
+```bash
+git clone https://github.com/xapolin1979/star_wars.git
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### 2. Instalar Dependencias
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Accede al directorio del proyecto y ejecuta el siguiente comando para instalar todas las dependencias necesarias:
 
-## Running end-to-end tests
+```bash
+cd star_wars
+npm install
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+###3. Activar Servidor Falso JSON-Server-Auth
+Para simular una base de datos falsa, necesitamos activar el servidor falso utilizando json-server-auth.
+Ejecuta el siguiente comando: 
+```bash
+   npx json-server-auth db.json  
 
-## Further help
+Esto iniciará el servidor falso y podrás acceder a la base de datos simulada.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+###4. Iniciar la Aplicación
+Una vez que el servidor esté activo, puedes iniciar la aplicación Angular,
+ejecutando el siguiente comando:
+```bash
+ng serve
+
+Después de compilar correctamente, podrás acceder a la aplicación en tu navegador web ingresando la dirección http://localhost:4200.
+
+

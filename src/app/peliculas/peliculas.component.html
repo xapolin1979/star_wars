@@ -1,0 +1,23 @@
+<div class="container-fluid">
+
+    <div class="peliculas">
+    
+        <h5>Peliculas </h5>
+    </div>
+    
+    <div class="container_targetPeliculas" *ngIf="listaPilotos">
+      <div class="targetPelicula"*ngFor="let pelicula of urlPeliculas;index as i">
+        <div class="imagen">
+          <img  src="https://starwars-visualguide.com/assets/img/films/{{numeroImg[i]}}.jpg" alt="">
+        
+        </div>
+        <div class="nombre">
+            <p>{{namePelicula[i]}}</p>
+        </div>
+      </div>
+    
+    </div>
+    <h2 *ngIf="!listaPilotos">No existe información </h2>
+    
+    </div>
+    

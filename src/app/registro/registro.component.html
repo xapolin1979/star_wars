@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="imagen">
+    <form  class="row g-3 needs-validation" [formGroup]="formulario" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label"><p> Nombre de usuario</p></label>
+          <input type="text" class="form-control "formControlName="name"  id="validationCustom01" [(ngModel)]="username" name="username" value="" required>
+          <div class="alert alert-danger mt-3"  role="alert" [hidden]="formulario.get('name')?.valid || formulario.get('name')?.pristine">
+            Introduce el nombre de usuario
+          </div> 
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label"><p>Correo</p> </label>
+            <input type="email" class="form-control" formControlName="email"  id="validationCustom02" [(ngModel)]="email" name="email" value="" required>
+            <div class="alert alert-danger mt-3" role="alert" [hidden]="formulario.get('email')?.valid ||  formulario.get('email')?.pristine">
+                @if(formulario.get('email')?.errors?.['email']){
+                    <span >
+                         Correo no valido
+                    </span>
+                 } 
+                @if(formulario.get('email')?.errors?.['required'] ){
+                    <span >
+                       Introduce un correo
+                    </span>
+
+                }
+          
+            </div> 
+
+
+
+            @if(existeEmail==true){
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Alerta !!! </strong>  Este correo electronico ya existe.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+        
+            }
+            @if(registrado==true){
+            <div class="alert alert-success d-flex flex-column align-items-center" role="alert">
+               Registro completado 
+               <button type="button" routerLink="/acceso" class="btn btn-outline-light mt-2">ACCESO</button>
+            </div>
+        }
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label"><p> Contraseña</p></label>
+            <input type="text" class="form-control" formControlName="password"  id="validationCustom03" [(ngModel)]="password" name="password" value="" required>
+            <div class="alert alert-danger mt-3" role="alert" [hidden]="formulario.get('password')?.valid || formulario.get('password')?.pristine">
+                Introduce una contraseña
+               </div> 
+          </div>
+     
+        <div class="col-12 mt-4">
+            <button type="button" (click)="registrar()" [disabled]="formulario.get('name')?.invalid || formulario.get('email')?.invalid || formulario.get('password')?.invalid"  class="btn btn-outline-light" >REGISTRARSE</button>
+        </div>
+      </form>
+
+  </div>
+
+
+</div>

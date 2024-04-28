@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="imagen">
+    <form  class="row g-3 needs-validation" [formGroup]="formulario"  novalidate>
+        <div class="col-md-6">
+          <label for="validationCustom01" class="form-label"><p> Correo</p></label>
+          <input type="email" class="form-control "formControlName="email"  id="validationCustom01"  name="email" value="" required>
+       
+        </div>
+          <div class="col-md-6">
+            <label for="validationCustom01" class="form-label"><p> Contraseña</p></label>
+            <input type="text" class="form-control" formControlName="password"  id="validationCustom03"  name="password" value="" required>
+          </div>
+     
+        <div class="col-12 mt-4">
+            <button type="button" (click)="login()" class="btn btn-outline-light" >Acceso</button>
+        </div>
+      </form>
+      <div class="registro">
+        <p>Para ver las naves necesitas : <a href="http://localhost:4200/registro"> Registrarte</a></p>
+      </div>
+      
+</div>
+
+  
+</div>

@@ -1,0 +1,34 @@
+
+<div class="container-fluid">
+    <div class="nave">
+        <h5><span>Nave espacial : </span>{{data[numeroId].name}}</h5>
+    </div>
+<div class="contenido">
+    <div class="imagen">
+        <img *ngIf="imagenCargada" src="https://starwars-visualguide.com/assets/img/starships/{{numeroImg}}.jpg" alt="">
+        <img *ngIf="!imagenCargada" src="https://starwars-visualguide.com/assets/img/placeholder.jpg" alt="">
+    
+       
+    </div>
+    <div class="targeta">
+     
+       <div class="text">
+        <p><span>Modelo :</span> {{data[numeroId].model}}</p>
+        <p><span>Costo en créditos : </span> {{data[numeroId].cost_in_credits}}</p>
+        <p><span>velocidad atmosférica : </span> {{data[numeroId].max_atmosphering_speed}}</p>
+       </div>
+       <div class="text">
+        <p><span>Fabricante : </span>{{data[numeroId].manufacturer}}</p>
+       <p><span>Longitud : </span>{{data[numeroId].length}}</p>
+       <p><span>Multitud : </span>{{data[numeroId].crew}}</p>
+       </div>
+       
+    </div>
+
+</div>
+   
+</div>
+
+
+<app-pilots></app-pilots>
+<app-peliculas></app-peliculas>

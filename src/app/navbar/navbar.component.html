@@ -1,0 +1,25 @@
+<div class="container-fluid">
+<nav class="navbar">
+  <div class="redes">
+  <div class="redesLogo1"></div>
+  <div class="redesLogo2"></div>
+ 
+  </div>
+  <div class="logo">
+    <img  src="../../assets/img/logoStar2.jpg" alt="">
+  </div>
+ 
+  <div class="btns">
+   
+      <button type="button" *ngIf="!baseDatosService.estaLogueado()" class="btn btn-outline-light" routerLink="/acceso" >ACCESO</button>
+      <button type="button" *ngIf="!baseDatosService.estaLogueado()" class="btn btn-outline-light" routerLink="/registro">REGISTRARSE</button>
+     <button type="button" *ngIf="baseDatosService.estaLogueado()" class="btn btn-outline-light" (click)="borrarToken()">Cerrar session</button>
+
+    
+  </div>
+</nav>
+<div class="homeYnaves">
+  <button type="button" routerLinkActive="router-link-active" routerLink=""  class="botones">Inicio</button>
+  <button type="button" class="botones" routerLink="/naves"> Naves</button>
+</div>
+</div>

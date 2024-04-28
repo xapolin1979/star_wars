@@ -1,0 +1,12 @@
+
+<div class="container-fluid"  >
+    
+    <div class="navesYmodelos" (click)="idNave(i)" id="{{i}}" *ngFor="let naves of data; index as i">
+      
+        <h3>{{naves.name}}</h3>
+        <h5>{{naves.name}} </h5>
+       
+    </div>
+   
+    <button type="button" (click)="verMas()" class="btn btn-outline-light">Ver mas</button>
+</div>
