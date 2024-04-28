@@ -15,9 +15,10 @@ git clone https://github.com/xapolin1979/star_wars.git
 
 ### 2. Instala las dependencias
 
-Accede al directorio del proyecto y ejecuta el siguiente comando para instalar todas las dependencias necesarias:
+Accede al directorio del proyecto para instalar todas las dependencias necesarias:
 
-cd star_wars
+Ejecuta el siguiente comando: 
+
 npm install
 
 ### 2. Activar Servidor Falso JSON-Server-Auth
