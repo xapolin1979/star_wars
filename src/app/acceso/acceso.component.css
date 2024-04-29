@@ -20,15 +20,16 @@
 .registro p{
  font-size: 1em;
  padding: 10px;
- box-shadow: #00FF00 0px 0px 30px;
+
  border-radius: 10px;
  margin-top: 50px;
- background-color: rgba(0, 0, 0, 0.53);
-
+ 
 }
 a{
     text-decoration: none;
   color:white;
+  background-color: rgba(0, 0, 0, 0.53);
+
 }
 form{
     margin-top: 30px;
