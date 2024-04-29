@@ -7,22 +7,10 @@
       "id": "b7b7"
     },
     {
-      "email": "ginesti1979@gmail.com",
-      "password": "$2a$10$qHCTnnQF5dSGAsqaqxPDFOCsn2TboOu8zAfnY116HHpuqZQTecH2.",
-      "username": "eloi",
-      "id": "CtgHScy"
-    },
-    {
       "email": "ramon@gmai.com",
       "password": "$2a$10$7TgpFuKyvdFi53UZMV4ztO654MYw8mDcEC7TqTZUZMLe2oYwiJM8.",
       "username": "ramon",
       "id": "iwHN8P3"
-    },
-    {
-      "email": "bet@gmail.com",
-      "password": "$2a$10$P5ShTWKojgrSLc7urS0FM.in0LmWkyrYkpPE.fL.rVRyQeQ0wxZfW",
-      "username": "bet",
-      "id": "vjGiuRi"
     },
     {
       "email": "chicho@gmail.com",
@@ -33,7 +21,7 @@
     {
       "email": "silvia@gmail.com",
       "password": "$2a$10$wQW9kO1xA0Oa2k3nUyvNP.t9BbJPif8obt2qOqL/k84F4y95Nnu/6",
-      "username": "silivia",
+      "username": "silvia",
       "id": "eMkI1Zv"
     }
   ]
